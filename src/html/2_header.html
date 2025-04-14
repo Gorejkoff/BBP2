@@ -1,0 +1,22 @@
+<header id="header" class="header">
+   <div class="header__border">
+      <div class="header__container">
+         <div class="header__body">
+
+            <a href="index.html" class="header__logo" aria-label="логотип Банкротное Бюро Про">
+               <img src="@img/svg/logo.svg" alt="Банкротное Бюро Про">
+            </a>
+
+            <button class="header__button button js-modal-open" type="button" data-modal_open="callback">
+               <span>обратный вызов</span>
+               <img src="@img/svg/icon-phone.svg" alt="иконка" aria-hidden="true">
+            </button>
+
+            @@include('../html/Button-Menu/Button-Menu.html',{})
+
+            @@include('../html/Mobile-Menu/Mobile-Menu.html',{})
+
+         </div>
+      </div>
+   </div>
+</header>

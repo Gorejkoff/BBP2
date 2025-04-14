@@ -1,0 +1,80 @@
+@use '../assets/variablesSCSS.scss' as *;
+
+
+.header {
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   overflow: hidden;
+
+   &__border {
+      padding: 20px 0;
+      margin: 30px auto 50px;
+      max-width: var(--max-width-big-container);
+      min-height: 89px;
+      display: flex;
+      align-items: center;
+      background-color: var(--color-white-08);
+
+      @media (min-width:1120px) {
+         border-radius: 6px;
+         backdrop-filter: blur(9.7px);
+         --weblit-backdrop-filter: blur(9.7px);
+         box-shadow: 0 15px 40px -20px rgba(0, 0, 0, 0.15);
+      }
+   }
+
+   &__container {}
+
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+   }
+
+   &__logo {
+
+      img,
+      svg {
+         width: 185px;
+      }
+   }
+
+   &__nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      li {
+         list-style: none;
+      }
+
+      a {
+         display: flex;
+         align-items: center;
+         flex-direction: row-reverse;
+         gap: 6px;
+      }
+
+      img,
+      a svg {
+         max-width: 15px;
+         max-height: 15px;
+      }
+   }
+
+   &__button {
+      margin-left: auto;
+      display: none;
+
+      @media (min-width:780px) {
+         display: block;
+      }
+
+      @media (min-width:1120px) {
+         margin-left: 0;
+      }
+   }
+}
