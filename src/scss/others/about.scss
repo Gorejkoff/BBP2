@@ -13,7 +13,9 @@
       margin-bottom: 87px;
    }
 
-   &__container {}
+   &__container {
+      position: relative;
+   }
 
 
    &__text {
@@ -123,5 +125,55 @@
    &__experience {
       font-weight: 700;
       line-height: 137%;
+   }
+
+   &__line-1 {
+      position: absolute;
+      top: 10%;
+      right: 30px;
+      height: 161px;
+      width: 7px;
+      border-radius: 4px;
+      background-color: var(--color-black);
+
+      @media (min-width:780px) {
+         top: 10%;
+         right: 50px;
+         height: 161px;
+         width: 10px;
+      }
+
+      @media (min-width:1120px) {
+         top: 0;
+         right: 50px;
+         height: 191px;
+         width: 15px;
+         background-color: var(--color-yellow);
+      }
+   }
+
+   &__line-2 {
+      position: absolute;
+      top: 10%;
+      right: 10px;
+      height: 95px;
+      width: 7px;
+      border-radius: 4px;
+      background-color: var(--color-yellow);
+
+      @media (min-width:780px) {
+         top: 10%;
+         right: 20px;
+         height: 95px;
+         width: 10px;
+      }
+
+      @media (min-width:1120px) {
+         top: 170px;
+         right: 20px;
+         height: 141px;
+         width: 13px;
+         background-color: var(--color-black);
+      }
    }
 }
